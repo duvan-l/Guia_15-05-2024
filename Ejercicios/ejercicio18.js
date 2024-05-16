@@ -3,8 +3,7 @@ const datos = [
   { "nombre": "Carlos", "edad": 30 },
   { "nombre": "Andrea", "edad": 22 },
   { "nombre": "Fabiano", "edad": 18 },
-  { "nombre": "Andres", "edad": 15}
-  // ... otros elementos
+  { "nombre": "Andres", "edad": 15},
 ];
 
 
