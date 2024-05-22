@@ -11,3 +11,5 @@ const nombresConA = datos.filter((elemento) => elemento.nombre.startsWith("A"));
 
 console.log(nombresConA);
   
+
+

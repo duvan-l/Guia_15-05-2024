@@ -1,30 +1,29 @@
-// Creamos la primera Promise que se resuelve después de 1 segundo con el número 5
-const promise1 = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(5);
-  }, 1000);
-});
-
-// Creamos la segunda Promise que se resuelve después de 1 segundo con el número 10
-const promise2 = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(10);
-  }, 1000);
-});
-
-// Creamos la tercera Promise que se resuelve después de 1 segundo con el número 15
-const promise3 = new Promise((resolve) => {
-  setTimeout(() => {
-    resolve(15);
-  }, 1000);
-});
-
-// Encadenamos las tres Promises y sumamos los resultados
-Promise.all([promise1, promise2, promise3])
-  .then((results) => {
-    const sum = results.reduce((acc, num) => acc + num, 0);
-    console.log("Resultado final:", sum);
+function crearPromiseConRetraso(valor, retraso) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(valor)
+    }, retraso)
   })
-  .catch((error) => {
-    console.error("Error:", error.message);
-  });
+}
+// Inicializamos 3 variables sin asignarle valor.
+let numero1
+let numero2
+let numero3
+
+crearPromiseConRetraso(1, 1000)
+  .then((resultado1) => {
+    console.log(resultado1)
+    numero1 = resultado1
+    return crearPromiseConRetraso(5, 1000)
+  })
+  .then((resultado2) => {
+    console.log(resultado2)
+    numero2 = resultado2
+    return crearPromiseConRetraso(3, 1000)
+  })
+  .then((resultado3) => {
+    console.log(resultado3)
+    numero3 = resultado3
+    const suma = numero1 + numero2 + numero3
+    console.log('Suma:', suma)
+  })
