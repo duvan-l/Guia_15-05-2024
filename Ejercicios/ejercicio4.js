@@ -9,8 +9,6 @@ function filter(arr, callback) {
   }
   return resultado;
 }
-
-// Ejemplo de uso:
 const numeros = [1, 2, 3, 4, 5];
 const numerosPares = filter(numeros, function (numero) {
   return numero % 2 === 0;

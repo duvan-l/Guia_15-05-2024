@@ -4,6 +4,7 @@ const miPromise = new Promise((resolve, reject) => {
   }, 2000);
 });
 
+
 miPromise.catch((error) => {
   console.error("Error:", error.message);
 });

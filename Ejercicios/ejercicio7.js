@@ -6,8 +6,6 @@ function find(array, callback) {
   }
   return undefined;
 }
-
-// Ejemplo de uso:
 const numbers = [1, 2, 3, 4, 5];
 
 const found = find(numbers, (element) => element > 3);

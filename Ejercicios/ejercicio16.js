@@ -9,7 +9,6 @@ function crearPromiseConRetraso(valor, retraso) {
 let numero1
 let numero2
 let numero3
-
 crearPromiseConRetraso(1, 1000)
   .then((resultado1) => {
     console.log(resultado1)

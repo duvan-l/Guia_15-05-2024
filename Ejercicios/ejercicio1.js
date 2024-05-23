@@ -8,8 +8,6 @@ function imprimirNumerosSetInterval(desde, hasta) {
     contador++;
   }, 1000);
 }
-
-// Ejemplo de uso:
 imprimirNumerosSetInterval(1, 5);
 
 // Se inicializa una variable contador con el valor desde.
@@ -31,8 +29,6 @@ function imprimirNumerosTimeout(desde, hasta) {
   }
   imprimir(desde);
 }
-
-// Ejemplo de uso:
 imprimirNumerosTimeout(1, 5);
 
 // Se define una función interna imprimir que toma un argumento contador.

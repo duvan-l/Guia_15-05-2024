@@ -8,8 +8,6 @@ function map(arr, callback) {
   }
   return resultado;
 }
-
-// Ejemplo de uso:
 const numeros = [1, 2, 3, 4, 5];
 const cuadrados = map(numeros, function (numero) {
   return numero * numero;

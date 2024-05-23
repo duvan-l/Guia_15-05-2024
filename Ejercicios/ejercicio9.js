@@ -5,8 +5,6 @@ function dropWhile(array, callback) {
   // Retorna un nuevo array a partir del índice encontrado
   return dropIndex === -1 ? [] : array.slice(dropIndex);
 }
-
-// Ejemplo de uso:
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const result = dropWhile(array, element => element < 5);
 console.log(result); 

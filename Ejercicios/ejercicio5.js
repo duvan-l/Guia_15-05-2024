@@ -9,8 +9,6 @@ function every(arr, callback) {
   // Si todas las llamadas al callback devolvieron true, retorna true
   return true;
 }
-
-// Ejemplo de uso:
 const numeros = [2, 4, 6, 8, 10];
 const todosPares = every(numeros, function (numero) {
   return numero % 2 === 0;

@@ -17,7 +17,6 @@ async function obtenerDatosEspecificos() {
     console.error("Error en la solicitud:", error);
   }
 }
-
 // Llama a la función asincrónica
 obtenerDatosEspecificos();
 

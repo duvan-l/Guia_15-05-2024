@@ -6,8 +6,6 @@ function findIndex(array, callback) {
   }
   return undefined;
 }
-
-// Ejemplo de uso:
 const numbers = [1, 2, 3, 4, 5];
 
 const evenIndex = findIndex(numbers, (element) => element % 2 === 0);

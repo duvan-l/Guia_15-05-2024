@@ -5,8 +5,6 @@ function takeWhile(array, callback) {
   // Retorna un nuevo array con los elementos hasta el índice encontrado
   return takeIndex === -1 ? array.slice() : array.slice(0, takeIndex);
 }
-
-// Ejemplo de uso:
 const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const result = takeWhile(array, element => element < 5);
 console.log(result); // Output esperado: [1, 2, 3, 4]

@@ -4,6 +4,5 @@ async function procesarElementos(elementos) {
     console.log('Procesando elemento:', elemento)
   }
 }
-
 const elementos = [1, 2, 3, 4, 5]
 procesarElementos(elementos)

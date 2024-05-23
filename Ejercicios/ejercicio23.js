@@ -14,6 +14,5 @@ async function obtenerDatosDesdeArchivo() {
     console.error("Error al cargar el archivo:", error.message);
   }
 }
-
 // Llama a la función asincrónica
 obtenerDatosDesdeArchivo();

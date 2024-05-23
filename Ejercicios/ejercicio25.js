@@ -34,8 +34,6 @@ function createValidatorProxy(obj) {
     }
   });
 }
-
-// Ejemplo de uso:
 const obj = createValidatorProxy({
   age: 'numeric',
   username: 'alphanumeric',

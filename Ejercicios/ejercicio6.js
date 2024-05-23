@@ -9,8 +9,6 @@ function some(arr, callback) {
   // Si ninguna llamada al callback devolvió true, retorna false
   return false;
 }
-
-// Ejemplo de uso:
 const numeros = [1, 3, 5, 7, 8];
 const algunPar = some(numeros, function (numero) {
   return numero % 2 === 0;

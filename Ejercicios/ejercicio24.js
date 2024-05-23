@@ -18,7 +18,6 @@ const handler = {
     return true;
   }
 };
-
 // Crear el objeto proxy
 const proxyObj = new Proxy(targetObj, handler);
 
